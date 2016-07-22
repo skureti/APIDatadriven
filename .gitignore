@@ -1,1 +1,9 @@
-d
+log.html
+output.xml
+report.html
+pabot_results
+*.pyc
+*.png
+.DS_Store
+.idea/
+VirtualEnvLibs/venv
