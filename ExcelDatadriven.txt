@@ -1,6 +1,6 @@
 
 *** Settings ***
-Library   DataReader/Datareade.py
+Library   DataReader/Datareader.py
 Library   Payload/payload.py
 
 *** Variables ***
