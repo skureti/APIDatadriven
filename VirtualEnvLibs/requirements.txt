@@ -1,0 +1,14 @@
+robotframework==3.0
+robotframework-debuglibrary==0.4
+robotframework-requests==0.4.5
+robotframework-extendedselenium2library==0.9.0
+robotframework-httplibrary
+robotframework-pabot==0.24
+selenium==2.53.2
+simplejson==3.8.2
+requests[security]==2.10.0
+fake-factory==0.5.7
+robotframework-faker==3.0.0
+pyreadline==2.1
+jsonschema==2.5.1
+jsoncompare==0.1.2
