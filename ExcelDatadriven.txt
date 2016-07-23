@@ -1,0 +1,29 @@
+
+*** Settings ***
+Library   DataReader/Datareader.py
+Library   Payload/payload.py
+
+*** Variables ***
+
+ ${file}      /Users/swapna.kureti/Documents/testData.xlsx
+ ${sheet}     Login
+
+*** Testcases ***
+Test data provider
+   [Template]   sample template
+   [Setup]  prepare data
+    :FOR   ${userid}    in   @{testData}
+    \       ${userid}
+
+
+*** Keywords ***
+
+prepare data
+    ${data}=   getDataFromSpreadsheet    ${file}    ${sheet}
+     Set Test Variable   ${testData}     ${data}
+
+sample template  [Arguments]    ${userid}
+     ${resp}=  geturlwithparams     ${userid}
+    Set Test Variable   ${r}     ${resp}
+    Should Be Equal  ${r.status_code}  ${201}
+
